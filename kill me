@@ -1,0 +1,30 @@
+
+package agenda;
+
+import java.io.*;
+public class Agenda {
+
+    
+    public static void main(String[] args) throws IOException {
+        String continuar = "s";
+        String [] lista = new String[5];
+        String opcion;
+        
+        int i = 0;
+        
+        while ("s".equals(continuar)){
+            
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("Que opcion desea realizar?: a. Agregar b. Modificar c. Eliminar d. Buscar: ");
+            opcion = br.readLine();
+            switch (opcion.toLowerCase()){
+                case "a":
+                    //i want to add the shit to the array here//
+                    //please help me my crops are dying i cant even think straight anymore// 
+                
+            }
+            
+        }
+    }
+    
+}
