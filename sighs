@@ -1,0 +1,68 @@
+//take me out of my misery//
+
+package agenda;
+
+import java.io.*;
+import java.util.Arrays;
+
+public class metodos {
+    static String nombre, apellido, correo, cedula, address, telefono1, telefono2, 
+            tipo_telef;
+    
+    static void agregar() throws IOException{
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Ingrese el nombre del contacto: ");
+        nombre = br.readLine();
+        System.out.print("Ingrese el apellido del contacto: ");
+        apellido = br.readLine();
+        System.out.print("Ingrese la cedula del contacto:");
+        cedula = br.readLine();
+        System.out.print("Ingrese el primer telefono del contacto: ");
+        telefono1 = br.readLine();
+        System.out.print("Que tipo de telefono es? Casa, celular, o trabajo?: ");
+        tipo_telef = br.readLine();
+        switch (tipo_telef.toLowerCase()){
+            case "casa":
+                telefono1 = tipo_telef + ": " + telefono1;
+                break;
+            case "celular":
+                telefono1 = tipo_telef + ": " + telefono1;
+                break;
+            case "trabajo": 
+                telefono1 = tipo_telef + ": " + telefono1;
+                break;
+            default:
+                System.out.print("Este no es disponible");
+                break;
+        }
+        System.out.print("Ingrese el segundo telefono del contacto");
+        telefono2 = br.readLine();
+        System.out.print("Que tipo de telefono es? Casa, celular, o trabajo?: ");
+        tipo_telef = br.readLine();
+        switch (tipo_telef.toLowerCase()){
+            case "casa":
+                telefono2 = tipo_telef + ": " + telefono2;
+                break;
+            case "celular":
+                telefono2 = tipo_telef + ": " + telefono2;
+                break;
+            case "trabajo": 
+                telefono2 = tipo_telef + ": " + telefono2;
+                break;
+            default:
+                System.out.print("Este no es disponible");
+                break;
+        }
+        System.out.print("Ingrese la direccion del contacto: ");
+        address = br.readLine();
+        System.out.print("Ingrese el e-mail del contacto");
+        correo = br.readLine();
+       
+        //now i wanna put all this shit in an array, in a way that i can reference //
+        // each variable separately when i need to like lista[i].correo or whatever//
+                
+    }
+    
+    
+}
